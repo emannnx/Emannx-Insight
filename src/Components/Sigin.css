@@ -1,0 +1,80 @@
+*{
+    border: 0;
+    margin: 0;
+}
+
+
+.SigninCont{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, white,#0A0A0F,#0A0A0F, #0A0A0F);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.SigninWrapper{
+    width: 30%;
+    height: 65%;
+    /* background-color: rgba(214, 145, 18, 0.687); */
+    /* opacity: 0.20; */
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+}
+
+.SigninHeader{
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+
+.SigninPlaceHolder{
+    width: 70%;
+    height: 8%;
+    background-color:#28272A;
+    color: white;
+    outline: 0;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 1px solid gray;
+    padding-left: 16px;
+}
+
+.SigninPlaceHolder::placeholder {
+  color: gray;
+  font-style: italic;
+}
+
+
+.PickButtonSign{
+    width: 270px;
+    height: 50px;
+    background-color: white;
+    color: #0A0A0F;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 50px;
+    transition: all 2s ease;
+
+}
+
+.PickButtonSign:hover{
+    background-color: transparent;
+    color: rgb(2, 2, 27);
+}
+
+.NoDecoration {
+  text-decoration: none;
+  color: white;
+}
+
+.AlreadySign {
+  color: white;
+}
+
+
