@@ -139,7 +139,7 @@ const ChatPage = () => {
   return (
     <div className="ChatContainer">
       <div className="ChatHeader">
-        <p>Hi, emann</p>
+        <p>Hi, emannX</p>
       </div>
 
       <div className="Chatherocont">
