@@ -3,7 +3,7 @@ section.chat-window {
     
     .chat {
         padding: 20px;
-        background-color: #F6F6F6;
+        /* background-color: #171717; */
         border-radius: 10px;
         text-align: left;
     
@@ -13,6 +13,7 @@ section.chat-window {
             font-size: 16px;
             padding: 16px;
             line-height: 20px;
+            background-color: #171717;
         }
 
         div.loader{
@@ -27,11 +28,13 @@ section.chat-window {
         div.user {
             display: flex;
             justify-content: flex-end;
+            /* background-color: #171717; */
     
             p {
                 width: 70%;
                 background-color: #40A0FF;
                 color: white;
+                margin-bottom: 10px;
             }
         }
     
@@ -70,3 +73,4 @@ section.chat-window {
         }
     }    
 }
+

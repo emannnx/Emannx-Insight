@@ -22,8 +22,7 @@ const Summary = ({file}) => {
             },
         },
          `
-          Summarize the document
-          in one short paragraph (less than 100 words).
+          Summarize the document.
           Use just plain text with no markdowns or html tags
         `,
       ]);

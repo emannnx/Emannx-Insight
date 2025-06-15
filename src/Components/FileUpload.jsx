@@ -18,11 +18,16 @@ const FileUpload = ({ setFile }) => {
   return (
     <section>
       <h2>Get Started</h2>
-      <input
+     <input
         type="file"
         accept=".pdf, .jpg, .jpeg, .png"
         onChange={handleFileUpload}
+        id="hiddenFileInput"
+        style={{ display: 'none' }} // hides the default input
       />
+      <label htmlFor="hiddenFileInput" className="custom-upload-button">
+        📎 Choose File
+      </label>
     </section>
   );
 };

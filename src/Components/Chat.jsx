@@ -28,7 +28,7 @@ const Chat = ({file}) => {
         },
          `
          Answer this question about the attached document: ${input}.
-         Answer as a chatbot with short message and text only {no markdowns, tags or symbols}
+         Answer as a chatbot with message and text only {no markdowns, tags or symbols}
          Chat history: ${JSON.stringify(message)}
         `,
       ]);
