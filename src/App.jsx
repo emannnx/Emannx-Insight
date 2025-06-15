@@ -1,24 +1,28 @@
-import React from 'react'
-import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
-import SignIn from './Components/SignIn'
-import Login from './Components/Login'
-import Home from './Components/Home'
-import ChatPage from './Components/ChatPage'
+import React, { useState } from 'react';
+import Header from './Components/Header';
+import FileUpload from './Components/FileUpload';
+import Summary from './Components/Summary';
+import Chat from './Components/Chat';
 
 const App = () => {
+  const [uploadedFile, setUploadedFile] = useState(null); // ✅ correct array destructuring
+
   return (
-   <BrowserRouter>
-   <Routes>
+    <div>
+      <main className="container">
+        <Header />
+        {
+          uploadedFile ? 
+             <>
+              <Summary file={uploadedFile} />
+              <Chat file={uploadedFile} />
+             </>
+            :
+             <FileUpload setFile={setUploadedFile} />
+        }
+      </main>
+    </div>
+  );
+};
 
-    <Route path='/' element={ <Home /> } />
-    <Route path='/Signin' element = { <SignIn /> } />
-    <Route path='/Login' element = { <Login /> } />
-    <Route path='/ChatPage' element={ <ChatPage/> } /> 
-
-
-   </Routes>
-   </BrowserRouter>
-  )
-}
-
-export default App
+export default App;
